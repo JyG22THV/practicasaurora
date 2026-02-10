@@ -7,7 +7,7 @@
 <body>
 
 <header id="inicio">
-    <h1> ---- - Tecnologías Sociales</h1>
+    <h1> --- Tecnologías Sociales ---</h1>
     <h2> ----- --- Se encarga de toda innovación digital encargada para el bienestar digital de la poblacion --- ----- </h2>
 </header>
 
@@ -16,6 +16,7 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Áreas</a></li>
         <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
         <li><a href="#contacto">Contacto</a></li>
     </ul>
 </nav>
@@ -27,17 +28,17 @@
 
     <article>
         <h3>Educación Digital</h3>
-        <p>Plataformas tecnológicas que facilitan el acceso a la educación en línea, reduciendo la brecha digital y promoviendo el aprendizaje inclusivo. Estas herramientas permiten que estudiantes de distintas regiones accedan a contenidos educativos de calidad.</p>
+        <p>Plataformas tecnológicas que facilitan el acceso a la educación en línea, reduciendo la brecha digital y promoviendo el aprendizaje inclusivo.</p>
     </article>
 
     <article>
         <h3>Salud Tecnológica</h3>
-        <p>Aplicaciones y sistemas digitales que permiten el monitoreo remoto de pacientes, consultas virtuales y acceso a información médica confiable, mejorando la atención y prevención de enfermedades.</p>
+        <p>Aplicaciones y sistemas digitales que permiten el monitoreo remoto de pacientes, consultas virtuales y acceso a información médica confiable.</p>
     </article>
 
     <article>
         <h3>Participación Ciudadana</h3>
-        <p>Herramientas digitales que fomentan la comunicación entre ciudadanos y gobierno, promoviendo la transparencia, la colaboración social y la toma de decisiones informadas.</p>
+        <p>Herramientas digitales que fomentan la comunicación entre ciudadanos y gobierno, promoviendo la transparencia y la participación social.</p>
     </article>
 </section>
 
@@ -46,13 +47,13 @@
 
     <article>
         <h3>Nueva Plataforma de Educación Comunitaria</h3>
-        <p>Se lanzó una plataforma gratuita para apoyar a estudiantes en comunidades rurales con acceso a cursos virtuales y materiales educativos interactivos.</p>
+        <p>Se lanzó una plataforma gratuita para apoyar a estudiantes en comunidades rurales mediante cursos virtuales.</p>
         <time datetime="2026-02-10">10 de Febrero de 2026</time>
     </article>
 
     <article>
         <h3>Aplicación de Salud Preventiva</h3>
-        <p>Una nueva app permite monitorear signos vitales y enviar alertas a centros médicos en tiempo real, fortaleciendo la atención temprana.</p>
+        <p>Una nueva app permite monitorear signos vitales y enviar alertas médicas en tiempo real.</p>
         <time datetime="2026-01-25">25 de Enero de 2026</time>
     </article>
 </section>
@@ -86,15 +87,14 @@
     <h2>Formulario de Contacto</h2>
 
     <form action="#" method="post">
-        
         <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo"><br><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
 
         <label for="correo">Correo Electrónico:</label><br>
-        <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com"><br><br>
+        <input type="email" id="correo" name="correo" required><br><br>
 
         <label for="edad">Edad:</label><br>
-        <input type="number" id="edad" name="edad" min="18" max="65" placeholder="18-65"><br><br>
+        <input type="number" id="edad" name="edad" min="18" max="65"><br><br>
 
         <label for="fecha">Fecha de contacto:</label><br>
         <input type="date" id="fecha" name="fecha"><br><br>
@@ -108,10 +108,9 @@
         </select><br><br>
 
         <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="40" required placeholder="Escribe tu mensaje aquí"></textarea><br><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
 
         <button type="submit">Enviar</button>
-
     </form>
 </section>
 
@@ -129,56 +128,36 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f6f1eb;
     color: #4a3f35;
-    line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(135deg, #e8dccf, #f3ede7);
+    background-color: #e8dccf;
     text-align: center;
     padding: 40px 20px;
-    animation: fadeDown 1.2s ease;
-}
-
-header h1 {
-    font-size: 2.6em;
-    margin-bottom: 10px;
-}
-
-header h2 {
-    font-size: 1.1em;
-    font-weight: normal;
-    max-width: 900px;
-    margin: auto;
 }
 
 nav {
     background-color: #d8c9b8;
     position: sticky;
     top: 0;
-    z-index: 10;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 25px;
     margin: 0;
-    padding: 10px 0;
-    gap: 30px;
+    padding: 10px;
 }
 
 nav a {
     text-decoration: none;
     color: #4a3f35;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #8b6f47;
 }
 
 main {
@@ -189,112 +168,47 @@ main {
 
 section {
     margin-bottom: 60px;
-    animation: fadeUp 1.2s ease;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: #6b5439;
 }
 
 article {
     background-color: #fffaf5;
-    border-radius: 12px;
-    padding: 25px;
-    margin-bottom: 25px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-article:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-}
-
-article h3 {
-    color: #7a5c3c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 #multimedia video,
 #multimedia audio,
 #multimedia iframe {
     display: block;
-    margin: 15px auto 35px;
-    border-radius: 10px;
+    margin: 15px auto 30px;
 }
 
 form {
     background-color: #fffaf5;
-    padding: 30px;
-    border-radius: 14px;
+    padding: 25px;
+    border-radius: 10px;
     max-width: 600px;
     margin: auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 input, select, textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #cbb9a6;
-    background-color: #fdf9f4;
-}
-
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #8b6f47;
+    padding: 8px;
 }
 
 button {
     background-color: #8b6f47;
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background-color: #6f5637;
-    transform: scale(1.05);
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 footer {
     background-color: #d8c9b8;
     text-align: center;
-    padding: 25px 15px;
-    font-size: 0.9em;
-}
-
-footer address {
-    margin-top: 10px;
-    font-style: normal;
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeDown {
-    from {
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    padding: 20px;
 }
 </style>
 
